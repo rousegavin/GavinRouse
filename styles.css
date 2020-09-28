@@ -8,6 +8,7 @@ body, html {
 
 .row {
     width: 100%;
+    margin-left: 0;
 }
 
 .col {
@@ -97,7 +98,6 @@ body, html {
 .centered {
     margin-left: auto;
     margin-right: auto;
-    float: none;
 }
 
 #intro .line {
