@@ -8,7 +8,6 @@ body, html {
 
 .row {
     width: 100%;
-    margin-left: 0px;
 }
 
 .col {
@@ -135,4 +134,16 @@ body, html {
     display: block;
     text-align: center;
     letter-spacing: 0.1em;
+}
+
+.separator {
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    padding: 0!important;
+    background: #005282;
 }
