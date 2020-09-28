@@ -43,7 +43,7 @@ body, html {
 
 .nameHeader .container {
     position: relative;
-    top: 200px;
+    top: 40%;
 }
 
 .nameHeader .container h1 {
@@ -113,6 +113,7 @@ body, html {
     color: #005282;
     opacity: 75%;
     font-size: large;
+    margin-bottom: 0px;
 }
 
 .section {
@@ -146,4 +147,16 @@ body, html {
     margin-bottom: 75px;
     padding: 0!important;
     background: #005282;
+}
+
+.navbar {
+    z-index: 1;
+    width: 100%;
+    background-color: #CBCCD1;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
 }

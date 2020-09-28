@@ -11,14 +11,15 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="js/navbar.js"></script>
 
   <title>Gavin Rouse | Software Test Engineer</title>
 </head>
 
 <body>
   <section id="intro" class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-    <div class="nameHeader" style="position: relative; z-index: 0;">
-      <div class="container" style="top: 396.5px">
+    <div class="nameHeader">
+      <div class="container">
         <div class="row">
           <div class="col">
             <h1>Gavin Rouse</h1>
@@ -34,41 +35,36 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0);">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow p-3 rounded">
       <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav centered">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#aboutme">
               <h6>About me</h6>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <h6>Skills</h6>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#experience">
               <h6>Experience</h6>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#education">
               <h6>Education</h6>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <h6>Portfolio</h6>
+            <a class="nav-link" href="#myprojects">
+              <h6>My Projects</h6>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#contact">
               <h6>Contact</h6>
             </a>
           </li>
@@ -244,7 +240,7 @@
       </div>
     </div>
   </section>
-  <section id="portfolio" class="section-alt">
+  <section id="myprojects" class="section-alt">
     <div class="container">
       <div class="row">
         <div class="col">
