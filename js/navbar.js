@@ -16,3 +16,18 @@ window.onload = function () {
   document.onscroll = scroll;
 
 };
+
+// NOT WORKING RIGHT NOW
+// $(window).scroll(function () {
+//   var position = $(this).scrollTop();
+
+//   $('.section').each(function () {
+//     var target = $(this).offset().top;
+//     var id = $(this).attr('id');
+
+//     if (position >= target) {
+//       $('.nav-link').removeClass('active');
+//       $('.nav-link[href=#' + id + ']').addClass('active');
+//     }
+//   });
+// });
