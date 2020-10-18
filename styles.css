@@ -8,7 +8,7 @@ body, html {
 
 .row {
     width: 100%;
-    margin-left: 0;
+    margin: 0;
 }
 
 .col {
@@ -126,7 +126,7 @@ body, html {
 }
 
 #hi {
-    padding-top: 0px;
+    padding-top: 20px;
 }
 
 #hobbies {
