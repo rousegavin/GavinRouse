@@ -233,3 +233,11 @@ body, html {
     width: 125px;
     border-radius: 50%;
 }
+
+#email-link {
+    color: #000;
+}
+
+#form-contact-container .col {
+    padding: 2px;
+}
