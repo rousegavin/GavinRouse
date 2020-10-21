@@ -186,6 +186,7 @@ body, html {
     align-items: center;
     padding-left: 6px;
     padding-right: 6px;
+    font-size: 1.25em;
 }
 
 .navbar-nav {
@@ -218,7 +219,7 @@ body, html {
     align-items: center;
     padding: 0;
     margin-left: 0.5em;
-    font-size: xx-large;
+    font-size: 2.5em;
     color: #005282;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
 }
