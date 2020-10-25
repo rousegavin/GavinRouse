@@ -242,3 +242,12 @@ body, html {
 #form-contact-container .col {
     padding: 2px;
 }
+
+#footer {
+    /* height: 25px; */
+    padding: 10px;
+}
+
+#footer h6 {
+    margin-bottom: 0px;
+}
