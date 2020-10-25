@@ -228,11 +228,17 @@ body, html {
     color: #005282;
 }
 
-.hobby-pic {
+.round-pic {
     object-fit: cover;
-    height: 125px;
-    width: 125px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
+}
+
+.rect-pic {
+    object-fit: fill;
+    height: 150px;
+    width: 250px;
 }
 
 #email-link {
@@ -244,7 +250,6 @@ body, html {
 }
 
 #footer {
-    /* height: 25px; */
     padding: 10px;
 }
 
