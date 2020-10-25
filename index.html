@@ -13,6 +13,7 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="js/contact-form.js"></script>
   <script src="js/navbar.js"></script>
 
   <title>Gavin Rouse | Software Test Engineer</title>
@@ -364,7 +365,6 @@
           <div class="centered line-alt"></div>
         </div>
       </div>
-
       <div class="row justify-content-center">
         <div class="row">
           <div class="col" style="margin-bottom: 25px;">
@@ -376,8 +376,53 @@
             <input type="hidden" id="thank_you" value="Thanks for reaching out!">
           </div>
         </div>
+        <section class="mb-4">
+          <h2 class="h1-responsive font-weight-bold text-center my-2">Send me a message</h2>
+          <p class="text-center w-responsive mx-auto mb-4">
+            It'll go directly to my email listed above
+          </p>
+          <div class="row justify-content-center">
+            <div class="col-md-9 mb-md-0 mb-5">
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST"
+                onsubmit="return validateForm()">
+                <div class="row p-2">
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Your name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="email" name="email" class="form-control" placeholder="Your email">
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-2">
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"
+                        placeholder="Your message"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <div class="text-center text-md-center p-2">
+                <a class="btn btn-primary" onclick="validateForm();">Send</a>
+              </div>
+              <div id="status"></div>
+            </div>
+            <!--Grid column-->
+          </div>
+        </section>
 
-        <div id="form-contact-container">
+        <!-- <div id="form-contact-container">
           <div class="col">
             <input type="text" name="name" id="name" value="" placeholder="Name">
           </div>
@@ -391,7 +436,7 @@
             <button class="button button-medium button-submit ladda-button" data-style="expand-right"
               id="submit-contact">Send</button>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -407,6 +452,38 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script>
+    function validateForm() {
+      var x = document.getElementById('name').value;
+      if (x == "") {
+        document.getElementById('status').innerHTML = "Name cannot be empty";
+        return false;
+      }
+      x = document.getElementById('email').value;
+      if (x == "") {
+        document.getElementById('status').innerHTML = "Email cannot be empty";
+        return false;
+      } else {
+        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!re.test(x)) {
+          document.getElementById('status').innerHTML = "Email format invalid";
+          return false;
+        }
+      }
+      x = document.getElementById('subject').value;
+      if (x == "") {
+        document.getElementById('status').innerHTML = "Subject cannot be empty";
+        return false;
+      }
+      x = document.getElementById('message').value;
+      if (x == "") {
+        document.getElementById('status').innerHTML = "Message cannot be empty";
+        return false;
+      }
+      document.getElementById('status').innerHTML = "Sending...";
+      document.getElementById('contact-form').submit();
+    }
+  </script>
 </body>
 
 </html>
