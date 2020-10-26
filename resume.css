@@ -1,0 +1,14 @@
+body {
+  padding-top: 75px;
+  background-color: #B9C9C8;
+}
+
+@media (max-width: 980px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+#download-resume {
+  padding: 20px;
+}

@@ -147,13 +147,17 @@ body, html {
 }
 
 .section {
-    background-color: #B9C9C8;
-}
-
-.section, .section-alt {
     margin: 0 auto;
     padding: 75px 0;
     position: relative;
+    background-color: #B9C9C8;
+}
+
+.section-alt {
+    margin: 0 auto;
+    padding: 75px 0;
+    position: relative;
+    background-color: #ffffff;
 }
 
 .section-title {
