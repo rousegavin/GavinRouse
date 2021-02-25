@@ -4,6 +4,7 @@ body, html {
   font-family: 'Dosis', sans-serif;
   text-align: center;
   scroll-behavior: smooth;
+  color: #030b1c;
 }
 
 .row {
@@ -31,51 +32,32 @@ body, html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color: #fff;
+    color: #f6f9fe;
 }
 
 .nameHeader {
-    width: 100%;
-    height: 100%;
-    margin-bottom: -60px;
-    text-align: center;
+    background-color: #f6f9fea4;
+    border-radius: 10px;
+    margin: 0px 70px;
+    padding: 60px;
 }
 
-.nameHeader .container {
-    justify-content: center;
-    align-items: center;
-}
-
-.nameHeader .container h1 {
+.nameHeader h1 {
     margin: 0;
     padding: 0;
-    font-size: 5em;
+    font-size: 7em;
     font-weight: 900;
-    letter-spacing: 0.1em;
     line-height: 1em;
-    text-transform: uppercase;
-    color: #005282;
-    text-shadow:
-      -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
+    color: #0B4FD5;
 }
 
-.nameHeader .container h4 {
+.nameHeader h4 {
     margin: 0;
     padding: 0;
     font-size: 2em;
     font-weight: 700;
-    letter-spacing: 0.1em;
     line-height: 1em;
-    text-transform: uppercase;
-    color: #005282;
-    text-shadow:
-      -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
+    color: #0B4FD5;
 }
 
 .line {
@@ -83,16 +65,7 @@ body, html {
     width: 290px;
     height: 3px;
     padding: 0!important;
-    background: #ccc;
-}
-
-.line-alt {
-    display: block;
-    width: 290px;
-    height: 3px;
-    padding: 0!important;
-    background:#005282;
-    opacity: 75%;
+    background:#0B4FD5;
 }
 
 .centered {
@@ -101,12 +74,7 @@ body, html {
 }
 
 #intro .line {
-    background-color: #689540;
-    box-shadow:
-      -1px -1px 0 #000,  
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 1px 0 #000;
+    background-color: #D5910B;
 }
 
 .navbar h6 {
@@ -118,9 +86,13 @@ body, html {
 #resume {
     outline-style: solid;
     outline-width: 2px;
-    outline-color: #689540;
+    outline-color: #D5910B;
     padding: 0px;
     margin-right: 2em;
+}
+
+a:link {
+    color: #0B4FD5;
 }
 
 #carouselIndicators {
@@ -148,24 +120,23 @@ body, html {
     margin: 0 auto;
     padding: 75px 0;
     position: relative;
-    background-color: #B9C9C8;
+    background-color: #f6f9fe;
 }
 
 .section-alt {
     margin: 0 auto;
     padding: 75px 0;
     position: relative;
-    background-color: #ffffff;
+    background-color: #80808040;
 }
 
 .section-title {
     padding: 0;
     font-size: 2.250em;
     font-weight: 300;
-    color: #000;
     text-transform: uppercase;
     display: block;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
 }
 
 .separator {
@@ -177,18 +148,18 @@ body, html {
     margin-top: 75px;
     margin-bottom: 75px;
     padding: 0!important;
-    background: #005282;
+    background: #0B4FD5;
 }
 
 .navbar {
     z-index: 999;
     width: 100%;
     padding: 0px;
-    background-image: linear-gradient(to bottom, rgb(184, 184, 187, 0.5), #888888);
+    background-image: linear-gradient(to bottom, #808080a6, #808080);
 }
 
 .nav-link {
-    color: #005282;
+    color: #0B4FD5;
 }
 
 .nav-item {
@@ -213,29 +184,24 @@ body, html {
 }
 
 .nav-link:hover {
-    color: #689540;
+    color: #f6f9fe;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
     top: 0;
-    background-image: linear-gradient(to bottom, #b8b8bb, #888888);
+    background-image: linear-gradient(to bottom, #adadad, #808080);
 }
 
 .navbar-brand {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding: 10px 20px;
     margin-left: 0.5rem;
     font-size: 2.5rem;
-    color: #005282;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
-}
-
-.navbar-brand:hover {
-    color: #005282;
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -243,7 +209,7 @@ body, html {
 }
 
 .custom-toggler {
-  border-color: rgb(0, 82, 130);
+  border-color: #0B4FD5;
   margin-right: 0.5rem;
 } 
 
@@ -266,7 +232,7 @@ body, html {
 }
 
 #email-link {
-    color: #000;
+    color: #030b1c;
 }
 
 #form-contact-container .col {
