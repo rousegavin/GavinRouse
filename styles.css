@@ -39,13 +39,13 @@ body, html {
     background-color: #f6f9fea4;
     border-radius: 10px;
     margin: 0px 70px;
-    padding: 60px;
+    padding: 4vw;
 }
 
 .nameHeader h1 {
     margin: 0;
     padding: 0;
-    font-size: 7em;
+    font-size: calc(100% + 4vw);
     font-weight: 900;
     line-height: 1em;
     color: #0B4FD5;
@@ -54,7 +54,7 @@ body, html {
 .nameHeader h4 {
     margin: 0;
     padding: 0;
-    font-size: 2em;
+    font-size: calc(100% + 2vw);
     font-weight: 700;
     line-height: 1em;
     color: #0B4FD5;
@@ -78,7 +78,7 @@ body, html {
 }
 
 .navbar h6 {
-    font-size: larger;
+    font-size: 2vh;
     margin-bottom: 0px;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
 }
@@ -93,6 +93,10 @@ body, html {
 
 a:link {
     color: #0B4FD5;
+}
+
+#carouselCol {
+    max-width: 500px;
 }
 
 #carouselIndicators {
