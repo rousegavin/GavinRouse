@@ -1,10 +1,28 @@
-body, html {
-  width: 100%;
-  height: 100%;
-  font-family: 'Dosis', sans-serif;
-  text-align: center;
-  scroll-behavior: smooth;
-  color: #030b1c;
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    color: #f6f9fe;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 22px;
+    font-size: 2.2rem;
 }
 
 .row {
@@ -26,7 +44,6 @@ body, html {
 #intro {
     width: 100%;
     height: 100%;
-    position: relative;
     background: url(img/intro-background.jpg) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -37,26 +54,20 @@ body, html {
 
 .nameHeader {
     background-color: #f6f9fea4;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 0px 70px;
     padding: 4vw;
 }
 
-.nameHeader h1 {
-    margin: 0;
-    padding: 0;
-    font-size: calc(100% + 4vw);
-    font-weight: 900;
-    line-height: 1em;
+#name h1 {
+    font-size: 80px;
+    font-size: 8rem;
+    font-weight: 800;
     color: #0B4FD5;
 }
 
-.nameHeader h4 {
-    margin: 0;
-    padding: 0;
-    font-size: calc(100% + 2vw);
-    font-weight: 700;
-    line-height: 1em;
+.nameHeader h2 {
+    font-weight: 600;
     color: #0B4FD5;
 }
 
@@ -77,18 +88,13 @@ body, html {
     background-color: #D5910B;
 }
 
-.navbar h6 {
-    font-size: 2vh;
-    margin-bottom: 0px;
+.navbar h1 {
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
 }
 
 #resume {
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: #D5910B;
-    padding: 0px;
-    margin-right: 2em;
+    box-shadow: 0 0 0 2pt #D5910B;
+    border-radius: 5px;
 }
 
 a:link {
@@ -136,11 +142,11 @@ a:link {
 
 .section-title {
     padding: 0;
-    font-size: 2.250em;
+    font-size: 30px;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
     display: block;
-    letter-spacing: 0.05em;
 }
 
 .separator {
@@ -158,7 +164,6 @@ a:link {
 .navbar {
     z-index: 999;
     width: 100%;
-    padding: 0px;
     background-image: linear-gradient(to bottom, #808080a6, #808080);
 }
 
@@ -169,9 +174,7 @@ a:link {
 .nav-item {
     display: flex;
     align-items: center;
-    padding-left: 6px;
-    padding-right: 6px;
-    font-size: 1.25em;
+    padding: 0px 6px;
 }
 
 .navbar-nav {
@@ -199,13 +202,11 @@ a:link {
 }
 
 .navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    margin-left: 0.5rem;
-    font-size: 2.5rem;
-    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+  float: left;
+}
+
+.navbar-brand a img {
+	max-height: 70px;
 }
 
 .custom-toggler .navbar-toggler-icon {
